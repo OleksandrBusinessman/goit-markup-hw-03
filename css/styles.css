@@ -77,7 +77,7 @@ img {
   outline: 2px solid tomato;
 }
 
-/* Хедер */
+/* Header */
 .nav .logo-web {
   color: var(--turquoise-color);
 }
@@ -119,6 +119,7 @@ img {
 .header {
   background-color: aquamarine;
 }
+
 /* Hero */
 .hero .title {
   margin-bottom: 30px;
@@ -153,25 +154,7 @@ img {
   background-color: var(--button-active-color);
 }
 
-/* Фільтри */
-.filtr {
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: calc(26 / 16);
-  border-color: transparent;
-  cursor: pointer;
-  letter-spacing: 0.03em;
-  color: var(--nav-title-color);
-  background-color: var(--section-light-color);
-}
-.filtr:hover,
-.filtr:focus {
-  color: var(--white-color);
-  background-color: var(--turquoise-color);
-}
-
-/* Секції */
+/* Секція наші сильні якості */
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -198,6 +181,8 @@ img {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
 }
+
+/* Секція чим ми займаємося */
 .foto {
   display: flex;
   flex-wrap: wrap;
@@ -220,6 +205,7 @@ img {
   margin-bottom: 50px;
 }
 
+/* Секція Наша команда */
 .team {
   display: flex;
   flex-wrap: wrap;
@@ -249,7 +235,7 @@ img {
   letter-spacing: 0.03em;
   text-align: center;
 }
-.bg-white {
+.card {
   padding: 30px;
   background-color: var(--white-color);
 }
@@ -259,9 +245,32 @@ img {
 .our-team {
   background-color: var(--section-light-color);
 }
+
+/* Фільтри */
 .list-filtr {
   margin-bottom: 50px;
 }
+.filtr {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  border-color: transparent;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  color: var(--nav-title-color);
+  background-color: var(--section-light-color);
+  border-radius: 4px;
+}
+.filtr:hover,
+.filtr:focus {
+  color: var(--white-color);
+  background-color: var(--turquoise-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* Секція приклади наших робіт */
 .examples {
   display: flex;
   flex-wrap: wrap;
@@ -288,6 +297,7 @@ img {
 .signature {
   padding: 20px 24px;
 }
+
 /* footer */
 .footer .logo-web {
   color: var(--turquoise-color);
