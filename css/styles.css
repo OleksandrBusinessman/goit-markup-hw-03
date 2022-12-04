@@ -25,6 +25,7 @@ font-family: 'Roboto', sans-serif; */
   --dark-color: #2f303a;
   --section-light-color: #f5f4fa;
   --button-active-color: #188ce8;
+  --card-set-gap: 30px;
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -71,8 +72,9 @@ img {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
-  border: 2px solid tomato;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato;
 }
 
 /* Хедер */
@@ -196,6 +198,18 @@ img {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
 }
+.foto {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--card-set-gap));
+  margin-left: calc(-1 * var(--card-set-gap));
+}
+.foto .item {
+  margin-top: var(--card-set-gap);
+  margin-left: var(--card-set-gap);
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  outline: 2px solid tomato;
+}
 .we-do {
   background-color: coral;
 }
@@ -204,6 +218,19 @@ img {
 }
 .we-do .title {
   margin-bottom: 50px;
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--card-set-gap));
+  margin-left: calc(-1 * var(--card-set-gap));
+}
+.team .item {
+  margin-top: var(--card-set-gap);
+  margin-left: var(--card-set-gap);
+  flex-basis: calc(100% / 4 - var(--card-set-gap));
+  outline: 2px solid tomato;
 }
 .team .title {
   margin-bottom: 10px;
@@ -218,6 +245,17 @@ img {
   letter-spacing: 0.03em;
   text-align: center;
 }
+.bg-white {
+  padding: 30px;
+  background-color: var(--white-color);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.team img {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
 .team-team {
   margin-bottom: 50px;
 }
@@ -226,6 +264,18 @@ img {
 }
 .list-filtr {
   margin-bottom: 50px;
+}
+.examples {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--card-set-gap));
+  margin-left: calc(-1 * var(--card-set-gap));
+}
+.examples .item {
+  margin-top: var(--card-set-gap);
+  margin-left: var(--card-set-gap);
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  outline: 2px solid tomato;
 }
 .examples .title {
   margin-bottom: 4px;
@@ -238,8 +288,8 @@ img {
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
 }
-.bg-white {
-  background-color: var(--white-color);
+.signature {
+  padding: 20px 24px;
 }
 /* footer */
 .footer .logo-web {
@@ -262,7 +312,6 @@ img {
 .contacts-ft .link:focus {
   color: var(--turquoise-color);
 }
-
 .footer {
   background-color: var(--dark-color);
 }
