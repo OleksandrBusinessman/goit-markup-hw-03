@@ -371,7 +371,7 @@ img {
 }
 .contacts-ft .link {
   font-size: 14px;
-  line-height: calc(24 / 14);
+  line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   font-style: normal;
   color: var(--tel-mail-footer-col);
@@ -391,9 +391,12 @@ img {
   padding-bottom: 60px;
 }
 .footer .logo {
-  display: block;
+  display: inline-block;
   margin-bottom: 28px;
 }
 .contacts-ft .item:not(:last-child) {
   margin-bottom: 12px;
+}
+.contacts-ft .item {
+  display: flex;
 }
