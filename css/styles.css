@@ -74,8 +74,6 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-
-  outline: 2px solid tomato;
 }
 
 /* Header */
@@ -108,10 +106,6 @@ img {
 .site-nav {
   display: flex;
 }
-/* .site-nav .item {
-  outline: 1px solid tomato;
-  background-color: tomato;
-} */
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
 }
@@ -156,7 +150,7 @@ img {
   color: var(--turquoise-color);
 }
 .header {
-  background-color: aquamarine;
+  border-bottom: 1px solid #ececec;
 }
 
 /* Hero */
@@ -206,9 +200,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--nav-title-color);
 }
-.our-strengths {
-  background-color: bisque;
-}
 .strengths .title {
   margin-bottom: 10px;
 
@@ -232,8 +223,6 @@ img {
   margin-top: var(--card-set-gap);
   margin-left: var(--card-set-gap);
   flex-basis: calc(100% / 4 - var(--card-set-gap));
-
-  outline: 2px solid tomato;
 }
 
 /* Секція чим ми займаємося */
@@ -247,11 +236,6 @@ img {
   margin-top: var(--card-set-gap);
   margin-left: var(--card-set-gap);
   flex-basis: calc(100% / 3 - var(--card-set-gap));
-
-  outline: 2px solid tomato;
-}
-.we-do {
-  background-color: coral;
 }
 .section.we-do {
   padding-top: 0;
@@ -277,7 +261,6 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  outline: 2px solid tomato;
 }
 .team .title {
   margin-bottom: 10px;
@@ -310,7 +293,12 @@ img {
 
 /* Фільтри */
 .list-filtr {
+  display: flex;
+  justify-content: center;
   margin-bottom: 50px;
+}
+.list-filtr .item:not(:last-child) {
+  margin-right: 8px;
 }
 .filtr {
   font-family: inherit;
@@ -343,8 +331,6 @@ img {
   margin-top: var(--card-set-gap);
   margin-left: var(--card-set-gap);
   flex-basis: calc(100% / 3 - var(--card-set-gap));
-
-  outline: 2px solid tomato;
 }
 .examples .title {
   margin-bottom: 4px;
@@ -360,6 +346,9 @@ img {
 }
 .signature {
   padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 /* footer */
