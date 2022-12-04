@@ -230,6 +230,10 @@ img {
   margin-top: var(--card-set-gap);
   margin-left: var(--card-set-gap);
   flex-basis: calc(100% / 4 - var(--card-set-gap));
+  border-radius: 0px 0px 4px 4px;
+  overflow: hidden;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   outline: 2px solid tomato;
 }
 .team .title {
@@ -248,13 +252,6 @@ img {
 .bg-white {
   padding: 30px;
   background-color: var(--white-color);
-  border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-.team img {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .team-team {
   margin-bottom: 50px;
