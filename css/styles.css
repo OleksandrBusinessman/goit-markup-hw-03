@@ -222,6 +222,19 @@ img {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
 }
+.strengths {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--card-set-gap));
+  margin-left: calc(-1 * var(--card-set-gap));
+}
+.strengths .item {
+  margin-top: var(--card-set-gap);
+  margin-left: var(--card-set-gap);
+  flex-basis: calc(100% / 4 - var(--card-set-gap));
+
+  outline: 2px solid tomato;
+}
 
 /* Секція чим ми займаємося */
 .foto {
@@ -245,6 +258,7 @@ img {
 }
 .we-do .title {
   margin-bottom: 50px;
+  text-align: center;
 }
 
 /* Секція Наша команда */
@@ -286,6 +300,9 @@ img {
 }
 .team-team {
   margin-bottom: 50px;
+}
+.our-team .team-team {
+  text-align: center;
 }
 .our-team {
   background-color: var(--section-light-color);
@@ -368,4 +385,15 @@ img {
 }
 .footer {
   background-color: var(--dark-color);
+}
+.footer .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer .logo {
+  display: block;
+  margin-bottom: 28px;
+}
+.contacts-ft .item:not(:last-child) {
+  margin-bottom: 12px;
 }
