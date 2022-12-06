@@ -165,6 +165,8 @@ img {
   color: var(--white-color);
 }
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
   background-color: var(--dark-color);
 }
@@ -303,6 +305,8 @@ img {
   margin-right: 8px;
 }
 .filtr {
+  height: 38px;
+  padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -377,12 +381,12 @@ img {
 .footer {
   background-color: var(--dark-color);
 }
-.footer .container {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 .footer .logo {
-  display: inline-block;
+  display: block;
   margin-bottom: 28px;
 }
 .contacts-ft .item:not(:last-child) {
